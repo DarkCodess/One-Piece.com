@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<style>
+	*{
+		padding: 0;
+		margin: 0;
+		background-color: black; 
+	}
+	.One_Piece{
+		position: relative;
+		width: 1280px;
+		height: 450px;
+		margin: 5px auto 0;
+		background: url(OnePiece.png);
+		background-repeat: no-repeat;
+		background-position: center top;
+
+		
+	}
+	.straw_hat{
+		position: relative;
+		width: 1280px;
+		height: 600px;
+		margin: 5px auto 0;
+	}
+	.straw_hat .crew{
+		position: relative;
+		width: calc(400px - 30px);
+		height: calc(300px - 30px);
+		float: left;
+		background: #33DCFF;
+		margin: 15px;
+		box-sizing: border-box;
+		overflow: hidden;
+		box-shadow: 0 5px 10px rgb(0,0,0,.8)	
+	}
+	.straw_hat .crew:before{
+		content: '';
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+		border-top: 2px solid #000;
+		border-bottom: 2px solid #000;
+		box-sizing:border-box;
+		transition: 0.5s;
+		transform: scaleX(0);
+		opacity: 0;
+	}
+	.straw_hat .crew:hover:before{
+		transform: scaleX(1);
+		opacity: 1;
+	}
+	.straw_hat .crew:after{
+		content: '';
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+		border-left: 2px solid #000;
+		border-right: 2px solid #000;
+		box-sizing:border-box;
+		transition: 0.5s;
+		transform: scaleY(0);
+		opacity: 0;
+	}
+	.straw_hat .crew:hover:after{
+		transform: scaleY(1);
+		opacity: 1;
+	}
+	.straw_hat .crew .imgCrew{
+		position: realtive;
+	}
+	.straw_hat .crew .imgCrew img{
+		width: 100%;
+	}
+	.straw_hat .crew .luffy{
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+	<div class="One_Piece"></div>
+	<div class="straw_hat">
+		<div class="crew">
+		<div class="imgCrew">
+		<img src="luffy.jpg" >
+		</div>
+		<div id = "luffy">
+			
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="zoro.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="nami.png">
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="usopp.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="sanji.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="Robin.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="tony.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="Franky.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="Brook.jpg" >
+		</div>
+		</div>
+		<div class ="crew">
+		<div class="imgCrew">
+		<img src="jinbei.jpg" >
+		</div>
+		</div>
+	</div>
+<script>
+</script>
+</div>
+</body>
+</html>
